@@ -19,7 +19,7 @@ Second_Value.pack()
 
     
 button = tk.Button(mainWindow,text="+",
-                   command = Add())
+                   command = lambda:Add())
 button.pack()
 
 button = tk.Button(mainWindow,text="-",
