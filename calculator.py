@@ -60,15 +60,14 @@ def Mul():
     result_label.config(text = "Operation Result is : " +str(Mul))
     
 def Div():
-    a=int(First_Value.get())
-    b=int(Second_Value.get())
+    a = int(First_Value.get())
+    b = int(Second_Value.get())
     try:
-        Div=a/b
-        
-    except:
-        messagebox.showerror("Error", "Zero Division Error. Please Enter Non Zero value in denominator.")
-    
-    result_label.config(text = "Operation Result is : " +str(Div))
+        result = a / b
+    except ZeroDivisionError:
+        messagebox.showerror("Error", "Cannot divide by zero")
+        return
+    result_label.config(text="Operation Result is : " + str(result))
 
 mainWindow.mainloop()
     
