@@ -38,12 +38,15 @@ result_label=tk.Label(mainWindow,text="Operation Result is : ")
 result_label.pack()
 
 def Add():
-    a=int(First_Value.get())
-    b=int(Second_Value.get())
-    add=a+b
-    result_label.config(text = "Operation Result is : " +str(add))
-    
-    
+    try:
+        a = int(First_Value.get())
+        b = int(Second_Value.get())
+    except ValueError:
+        messagebox.showerror("Error", "Please enter valid numbers")
+        return
+
+    result = a + b
+    result_label.config(text="Operation Result is : " + str(result))
     
     
 def Sub():
