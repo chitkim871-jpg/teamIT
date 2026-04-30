@@ -52,8 +52,8 @@ def Add():
 def Sub():
     a=int(First_Value.get())
     b=int(Second_Value.get())
-    Sub=a-b
-    result_label.config(text = "Operation Result is : " +str(Sub))
+    result = a - b
+    result_label.config(text = "Operation Result is : " +str(result))
     
     
 def Mul():
