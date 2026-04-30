@@ -4,13 +4,13 @@ from tkinter import messagebox
 mainWindow = tk.Tk()
 mainWindow.title("Calculator")
 
-First = tk.Label(mainWindow,text="Enter Your First Number",pady=(10))
+First = tk.Label(mainWindow,text="Enter Your First Number",pady=10)
 First.pack()
 
 First_Value = tk.Entry(mainWindow)
 First_Value.pack()
 
-Second = tk.Label(mainWindow,text="Enter Your Second Number",pady=(10),padx=10)
+Second = tk.Label(mainWindow,text="Enter Your Second Number",pady=10,padx=10)
 Second.pack()
 
 Second_Value = tk.Entry(mainWindow)
